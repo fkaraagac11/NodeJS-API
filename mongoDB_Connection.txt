@@ -1,0 +1,1 @@
+mongodb+srv://nodejs:<password>@cluster0.6hlrh.mongodb.net/<dbname>?retryWrites=true&w=majority

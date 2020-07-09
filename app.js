@@ -11,9 +11,10 @@ mongoose.connect(
     "mongodb+srv://nodejs:" +
         process.env.MONGO_ATLAS_PW +
         "n@cluster0.6hlrh.mongodb.net/<dbname>?retryWrites=true&w=majority",
-    {
-        useMongoClient: true,
-    }
+    // {
+    //     useMongoClient: true,  //Bu artik kullanilmiyor
+    // }
+    { useUnifiedTopology: true, useNewUrlParser: true }
 );
 
 app.use(morgan("dev"));

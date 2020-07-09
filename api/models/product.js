@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { MongoClient } = require("mongodb");
 
 const productSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,

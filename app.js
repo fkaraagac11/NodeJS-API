@@ -6,11 +6,11 @@ const mongoose = require("mongoose");
 
 const productRoutes = require("./api/routes/products");
 const orderRoutes = require("./api/routes/orders");
+const password = "nodejs";
+const dbName = "shop-API";
 
 mongoose.connect(
-    "mongodb+srv://nodejs:" +
-        process.env.MONGO_ATLAS_PW +
-        "n@cluster0.6hlrh.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    `mongodb+srv://nodejs:${password}@cluster0.6hlrh.mongodb.net/${dbName}?retryWrites=true&w=majority`,
     // {
     //     useMongoClient: true,  //Bu artik kullanilmiyor
     // }
